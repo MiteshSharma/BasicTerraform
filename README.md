@@ -8,3 +8,17 @@ Once we init we want to know what exactly is going to happen on aws infrastructu
 **terraform apply** command is used to apply the changes required to reach the desired state. Terraform apply scans current directory for the configuration and apply the changes on aws.
 
 Once we are done with the changes we can run **terraform destroy** to destroy terraform managed infrastructure.
+
+## Steps to run this code:
+
+Step 1: Clone this repository 
+
+Step 2: Replace "ACCESS_KEY_HERE" with aws access key and "SECRET_KEY_HERE" with aws secret key. These keys can be generated from IAM module of aws.
+
+Step 3: Run command "./terraform init" or "terraform init" to init configuration workspace
+
+Step 4: Run command "./terraform plan" or "terraform plan" to see output which is going to be executed.
+
+Step 5: Run command "./terraform apply" or "terraform apply" to actually create EC2 instance
+
+Step 6: Run command "./terraform destroy" or "terraform destroy" to destroy created EC2 instance. This will only delete instance created through terraform apply.
